@@ -8,6 +8,7 @@ nome = "Lalala"
 comida = 'frango'
 quero = '''
 vencer uma corrida de F1
+ganhar o troféu
 '''
 
 # Declare variáveis de cada tipo numérico
