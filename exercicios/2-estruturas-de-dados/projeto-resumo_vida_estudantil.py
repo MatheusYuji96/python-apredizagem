@@ -6,9 +6,11 @@
 
 estudante = {}
 estudante['nome'] = input('Qual o seu nome? ')
-estudante['ano_LinkedIn'] = input('Qual o ano que conheceu o LinkedIn Learning? ')
-estudante['ano_atual'] = input('Qual o ano atua? ')
+estudante['ano_LinkedIn'] = int(input('Qual o ano que conheceu o LinkedIn Learning? '))
+estudante['ano_atual'] = int(input('Qual o ano atual? '))
 cursos = input('Quais os cursos que fez na plataforma? (Separe-os com vírgula[,] e espaço) ')
 
+anos_transcorridos = estudante['ano_atual'] - estudante['ano_LinkedIn']
 estudante['cursos'] = cursos.split(', ')
-print(f"O/A estudante {estudante['nome']} conheceu o LinkedIn Learning no ano de {estudante['ano_LinkedIn']}. Agora é {estudante['ano_atual']} e já fez os cursos de {estudante['cursos']}")
+total_cursos = len(estudante['cursos'])
+print(f"O/A estudante {estudante['nome']} conheceu o LinkedIn Learning no ano de {estudante['ano_LinkedIn']}. Agora se passaram {anos_transcorridos} anos e seu primeiro curso foi de {estudante['cursos'][0]}, totalizando hoje {total_cursos} cursos")
