@@ -7,6 +7,7 @@ pessoa = {'nome':'Crislaine',
           'animal_estimacao':False}
 
 # Imprima na tela o valor equivalente a chave "hobby"
+print()
 
 
 # Imprima na tela uma lista apenas com os valores do dicionário
