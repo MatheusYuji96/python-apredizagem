@@ -5,3 +5,15 @@
 # 4. Crie uma estrutura condicional para verificar se cada variável está contida na lista
 # 5. Se o curso estiver na lista, solicite uma nota para avaliação
 # 6. Armazene essa nota no dicionário, sendo a chave o título do curso e o valor a nota
+
+cursos = ['adm', 'python', 'java', 'react', 'frontend']
+profissao = 'adm'
+visual = 'frontend'
+linguagem = 'python'
+nota = {}
+if profissao in cursos:
+  nota[profissao] = int(input(f'Qual a nota para o curso de {profissao}?'))
+if visual in cursos:
+  nota[visual] = int(input(f'Qual a nota para o curso de {visual}?'))
+if linguagem in cursos:
+  nota[linguagem] = int(input(f'Qual a nota para o curso de {linguagem}?'))
